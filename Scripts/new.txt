@@ -1,0 +1,29 @@
+const mainFunction = (tileFunction, image) => {//Main Function with the callback Function.
+    //Accessing the DOM in HTML
+    const diff = document.querySelector(".difficulty");
+    const easy = document.querySelector(".easy");
+    const medium = document.querySelector(".medium");
+    const hard = document.querySelector(".hard");
+
+    let diffNum;
+    //Easy mode event listener.
+    easy.addEventListener("click", () => {
+        diff.style.display = "none";
+        diffNum = 16;
+        tileFunction(diffNum, "280px", image, 1, gameOptions);
+    });
+    ///Medium mode event listener.
+    medium.addEventListener("click", () => {
+        diff.style.display = "none";
+        let diffNum = 36;
+        tileFunction(diffNum, "420px", image, 2, gameOptions);
+    });
+    //Hard mode event listener.
+    hard.addEventListener("click", () => {
+        diff.style.display = "none";
+        let diffNum = 64;
+        tileFunction(diffNum, "560px", image, 4, gameOptions);
+    });
+};
+
+mainFunction(tileFunc, imageFunc);

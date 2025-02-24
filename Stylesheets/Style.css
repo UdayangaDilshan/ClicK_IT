@@ -1,0 +1,156 @@
+body{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto;
+
+    background-color: black;
+    height: 100vh;
+}
+
+.difficulty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+
+    position: absolute;
+    z-index: 100;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+h2{
+    color: white;
+}
+
+.difficulty-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.easy, .medium, .hard{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.easy:hover, .medium:hover, .hard:hover{
+    background-color: white;
+    color: black;
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    padding:  10px;
+    border-radius: 20px;
+
+    width:  45vw;
+    height: 45vw;
+}
+
+h1{
+    color: white;
+    font-size: 3rem;
+}
+
+.box-container{
+    width : fit-content;
+    height: fit-content;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0px 10px 10px;
+}
+
+.tile{
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 10px;
+
+    background-color: black;
+}
+
+.End{
+    background-color: rgba(0, 0, 0, 0.536);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    position: absolute;
+    z-index: 101;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.finish{
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.try-options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.exit, .restart{
+    background-color: black;
+    border: 2px solid white;
+    width: 40px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exit  svg, .restart svg{
+    fill: white;
+}
+
+.exit:hover, .restart:hover{
+    background-color: white;
+    fill: black;
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+}
+
+.exit:hover svg, .restart:hover svg{
+    fill: black;
+}

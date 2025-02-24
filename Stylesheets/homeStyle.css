@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1{
+    font-size: 200px;
+}
+
+h2{
+    font-size: 50px;
+}
+
+a{
+    background-color: black;
+    border: 2px solid white;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover{
+    background-color: white;
+    color: black;
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+}
